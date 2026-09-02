@@ -1,0 +1,1114 @@
+```html
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Gratis Windows Security Tools</title>
+
+<meta name="description" content="Gratis antivirus, VPN, firewall, malware scanners en online scanners voor Windows 10 en Windows 11.">
+
+<style>
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #07111f;
+    color: #eaf2ff;
+    line-height: 1.6;
+}
+
+/* HEADER */
+
+header {
+    background: linear-gradient(135deg, #07111f, #0d1d33);
+    border-bottom: 1px solid #193454;
+    padding: 22px 6%;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #42d9ff;
+}
+
+.logo span {
+    color: #ffffff;
+}
+
+nav a {
+    color: #dcecff;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #42d9ff;
+}
+
+/* HERO */
+
+.hero {
+    min-height: 560px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 80px 20px;
+    background:
+        radial-gradient(circle at 20% 20%, #123b62 0, transparent 35%),
+        radial-gradient(circle at 80% 70%, #163d58 0, transparent 35%),
+        #07111f;
+}
+
+.hero-content {
+    max-width: 900px;
+}
+
+.badge {
+    display: inline-block;
+    background: #102a45;
+    border: 1px solid #1e638b;
+    color: #42d9ff;
+    padding: 8px 18px;
+    border-radius: 50px;
+    margin-bottom: 25px;
+    font-weight: bold;
+}
+
+.hero h1 {
+    font-size: clamp(42px, 7vw, 76px);
+    line-height: 1.05;
+    margin-bottom: 25px;
+}
+
+.hero h1 span {
+    color: #42d9ff;
+}
+
+.hero p {
+    font-size: 20px;
+    color: #b7c8dc;
+    max-width: 700px;
+    margin: auto;
+}
+
+.hero-buttons {
+    margin-top: 35px;
+}
+
+.button {
+    display: inline-block;
+    padding: 14px 25px;
+    margin: 6px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+.button-primary {
+    background: #42d9ff;
+    color: #06101b;
+}
+
+.button-primary:hover {
+    transform: translateY(-2px);
+    background: #72e4ff;
+}
+
+.button-secondary {
+    border: 1px solid #35617f;
+    color: white;
+}
+
+.button-secondary:hover {
+    background: #102a45;
+}
+
+/* SECTIONS */
+
+section {
+    padding: 80px 6%;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.section-title h2 {
+    font-size: 38px;
+    margin-bottom: 10px;
+}
+
+.section-title p {
+    color: #9eb1c8;
+}
+
+/* CARDS */
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+.card {
+    background: #0c1b2d;
+    border: 1px solid #1b3855;
+    border-radius: 15px;
+    padding: 30px;
+    transition: 0.25s;
+    display: flex;
+    flex-direction: column;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    border-color: #42d9ff;
+}
+
+.icon {
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+.card h3 {
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.card p {
+    color: #aebfd3;
+    margin-bottom: 18px;
+}
+
+.tag {
+    display: inline-block;
+    width: fit-content;
+    background: #12314a;
+    color: #42d9ff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 13px;
+    font-weight: bold;
+    margin-bottom: 18px;
+}
+
+.download {
+    margin-top: auto;
+    text-align: center;
+    background: #42d9ff;
+    color: #06101b;
+    text-decoration: none;
+    padding: 13px;
+    border-radius: 7px;
+    font-weight: bold;
+}
+
+.download:hover {
+    background: #72e4ff;
+}
+
+/* FEATURE BOX */
+
+.info-box {
+    background: #0c1b2d;
+    border: 1px solid #1b3855;
+    border-radius: 15px;
+    padding: 35px;
+    margin-top: 35px;
+}
+
+.info-box h3 {
+    color: #42d9ff;
+    margin-bottom: 12px;
+}
+
+.info-box p {
+    color: #b6c7da;
+}
+
+/* TABLE */
+
+.table-wrapper {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #0c1b2d;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+th, td {
+    padding: 16px;
+    border-bottom: 1px solid #203b56;
+    text-align: left;
+}
+
+th {
+    background: #102a45;
+    color: #42d9ff;
+}
+
+td {
+    color: #c2d0df;
+}
+
+/* FAQ */
+
+.faq {
+    max-width: 850px;
+    margin: auto;
+}
+
+.faq-item {
+    background: #0c1b2d;
+    border: 1px solid #1b3855;
+    border-radius: 10px;
+    padding: 22px;
+    margin-bottom: 15px;
+}
+
+.faq-item h3 {
+    margin-bottom: 8px;
+}
+
+.faq-item p {
+    color: #aebfd3;
+}
+
+/* FOOTER */
+
+footer {
+    background: #040b13;
+    border-top: 1px solid #193454;
+    padding: 40px 6%;
+    text-align: center;
+}
+
+footer p {
+    color: #8295aa;
+    margin: 7px;
+}
+
+footer a {
+    color: #42d9ff;
+    text-decoration: none;
+}
+
+/* MOBILE */
+
+@media (max-width: 700px) {
+
+    header {
+        position: static;
+    }
+
+    .nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav a {
+        margin: 5px;
+        font-size: 14px;
+    }
+
+    .hero {
+        min-height: 500px;
+    }
+
+    section {
+        padding: 60px 5%;
+    }
+
+    .section-title h2 {
+        font-size: 30px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+
+<header>
+    <div class="nav">
+
+        <div class="logo">
+            🛡️ <span>Gratis</span> Windows Security
+        </div>
+
+        <nav>
+            <a href="#antivirus">Antivirus</a>
+            <a href="#vpn">VPN</a>
+            <a href="#firewall">Firewall</a>
+            <a href="#malware">Malware</a>
+            <a href="#online">Online Scan</a>
+        </nav>
+
+    </div>
+</header>
+
+
+<!-- HERO -->
+
+<section class="hero">
+
+    <div class="hero-content">
+
+        <div class="badge">
+            100% gratis beveiliging voor Windows
+        </div>
+
+        <h1>
+            Bescherm je <span>Windows PC</span>
+        </h1>
+
+        <p>
+            Een overzichtelijke verzameling van gratis antivirus,
+            VPN, firewall, malware scanners en online beveiligingstools.
+        </p>
+
+        <div class="hero-buttons">
+
+            <a href="#antivirus" class="button button-primary">
+                Bekijk antivirus
+            </a>
+
+            <a href="#vpn" class="button button-secondary">
+                Bekijk gratis VPN
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ANTIVIRUS -->
+
+<section id="antivirus">
+
+<div class="container">
+
+    <div class="section-title">
+
+        <h2>🛡️ Gratis Antivirus</h2>
+
+        <p>
+            Gratis antivirusprogramma's en ingebouwde Windows-beveiliging.
+        </p>
+
+    </div>
+
+
+    <div class="cards">
+
+
+        <!-- WINDOWS DEFENDER -->
+
+        <div class="card">
+
+            <div class="icon">🪟</div>
+
+            <span class="tag">INGEBOUWD</span>
+
+            <h3>Microsoft Defender</h3>
+
+            <p>
+                De ingebouwde antivirus van Windows 10 en Windows 11.
+                Windows Security bevat ook firewall- en andere
+                beveiligingsfuncties.
+            </p>
+
+            <a class="download"
+               href="https://support.microsoft.com/nl-nl/windows/security/windows-security/stay-protected-with-the-windows-security-app"
+               target="_blank"
+               rel="noopener">
+                Bekijk Microsoft Defender
+            </a>
+
+        </div>
+
+
+        <!-- ZONEALARM -->
+
+        <div class="card">
+
+            <div class="icon">🔰</div>
+
+            <span class="tag">GRATIS</span>
+
+            <h3>ZoneAlarm Free Antivirus</h3>
+
+            <p>
+                Gratis antivirus voor Windows met antivirus,
+                anti-spyware en firewallfuncties.
+            </p>
+
+            <a class="download"
+               href="https://www.zonealarm.com/software/free-antivirus"
+               target="_blank"
+               rel="noopener">
+                Gratis downloaden
+            </a>
+
+        </div>
+
+
+        <!-- MALWAREBYTES -->
+
+        <div class="card">
+
+            <div class="icon">🦠</div>
+
+            <span class="tag">GRATIS SCANNER</span>
+
+            <h3>Malwarebytes</h3>
+
+            <p>
+                Bekende beveiligingstool waarmee je Windows kunt
+                controleren op malware en andere bedreigingen.
+            </p>
+
+            <a class="download"
+               href="https://www.malwarebytes.com/nl/mwb-download"
+               target="_blank"
+               rel="noopener">
+                Gratis downloaden
+            </a>
+
+        </div>
+
+    </div>
+
+
+    <div class="info-box">
+
+        <h3>⚠️ Belangrijk</h3>
+
+        <p>
+            Installeer niet meerdere antivirusprogramma's met
+            realtime bescherming tegelijk. Dit kan conflicten,
+            prestatieproblemen en beveiligingsproblemen veroorzaken.
+            Microsoft Defender is al onderdeel van Windows 10 en 11.
+        </p>
+
+    </div>
+
+</div>
+
+</section>
+
+
+<!-- VPN -->
+
+<section id="vpn">
+
+<div class="container">
+
+    <div class="section-title">
+
+        <h2>🔒 Gratis VPN voor Windows</h2>
+
+        <p>
+            Bescherm je internetverbinding met een gratis VPN.
+        </p>
+
+    </div>
+
+
+    <div class="cards">
+
+
+        <div class="card">
+
+            <div class="icon">🔵</div>
+
+            <span class="tag">GRATIS PLAN</span>
+
+            <h3>Proton VPN</h3>
+
+            <p>
+                Proton VPN biedt een gratis VPN-plan voor Windows.
+                Geschikt voor het beschermen van je verbinding op
+                openbare wifi en andere netwerken.
+            </p>
+
+            <a class="download"
+               href="https://protonvpn.com/free-vpn/windows"
+               target="_blank"
+               rel="noopener">
+                Proton VPN downloaden
+            </a>
+
+        </div>
+
+
+        <div class="card">
+
+            <div class="icon">🌐</div>
+
+            <span class="tag">WINDOWS</span>
+
+            <h3>Gratis VPN kiezen</h3>
+
+            <p>
+                Controleer altijd de voorwaarden van een gratis VPN.
+                Let vooral op datalimieten, servers, snelheid en
+                privacybeleid.
+            </p>
+
+            <a class="download"
+               href="https://protonvpn.com/free-vpn"
+               target="_blank"
+               rel="noopener">
+                Bekijk Proton VPN
+            </a>
+
+        </div>
+
+    </div>
+
+</div>
+
+</section>
+
+
+<!-- FIREWALL -->
+
+<section id="firewall">
+
+<div class="container">
+
+    <div class="section-title">
+
+        <h2>🔥 Gratis Firewall</h2>
+
+        <p>
+            Controleer welke verbindingen je Windows-computer toestaat.
+        </p>
+
+    </div>
+
+
+    <div class="cards">
+
+
+        <div class="card">
+
+            <div class="icon">🪟</div>
+
+            <span class="tag">INGEBOUWD</span>
+
+            <h3>Windows Firewall</h3>
+
+            <p>
+                De Windows Firewall is onderdeel van Windows Security
+                en werkt samen met de andere beveiligingsfuncties
+                van Windows.
+            </p>
+
+            <a class="download"
+               href="https://support.microsoft.com/nl-nl/windows/security/windows-security/stay-protected-with-the-windows-security-app"
+               target="_blank"
+               rel="noopener">
+                Windows Firewall informatie
+            </a>
+
+        </div>
+
+
+        <div class="card">
+
+            <div class="icon">🔥</div>
+
+            <span class="tag">GRATIS</span>
+
+            <h3>ZoneAlarm Free Firewall</h3>
+
+            <p>
+                Gratis firewall voor Windows waarmee netwerkverkeer
+                kan worden gecontroleerd.
+            </p>
+
+            <a class="download"
+               href="https://www.zonealarm.com/software/free-downloads"
+               target="_blank"
+               rel="noopener">
+                Gratis downloaden
+            </a>
+
+        </div>
+
+    </div>
+
+</div>
+
+</section>
+
+
+<!-- MALWARE -->
+
+<section id="malware">
+
+<div class="container">
+
+    <div class="section-title">
+
+        <h2>🦠 Gratis Malware Scanners</h2>
+
+        <p>
+            Extra tools om je Windows-pc te controleren.
+        </p>
+
+    </div>
+
+
+    <div class="cards">
+
+
+        <!-- ADWCLEANER -->
+
+        <div class="card">
+
+            <div class="icon">🧹</div>
+
+            <span class="tag">GRATIS</span>
+
+            <h3>Malwarebytes AdwCleaner</h3>
+
+            <p>
+                Gespecialiseerd in het vinden en verwijderen van
+                adware, PUP's en browserkapers.
+            </p>
+
+            <a class="download"
+               href="https://www.malwarebytes.com/nl/adwcleaner"
+               target="_blank"
+               rel="noopener">
+                AdwCleaner downloaden
+            </a>
+
+        </div>
+
+
+        <!-- MSRT -->
+
+        <div class="card">
+
+            <div class="icon">🪟</div>
+
+            <span class="tag">MICROSOFT</span>
+
+            <h3>Microsoft MSRT</h3>
+
+            <p>
+                Microsoft Windows-hulpprogramma voor het verwijderen
+                van schadelijke software.
+            </p>
+
+            <a class="download"
+               href="https://www.microsoft.com/nl-nl/download/details.aspx?id=9905"
+               target="_blank"
+               rel="noopener">
+                MSRT downloaden
+            </a>
+
+        </div>
+
+
+        <!-- MALWAREBYTES -->
+
+        <div class="card">
+
+            <div class="icon">🔍</div>
+
+            <span class="tag">GRATIS SCAN</span>
+
+            <h3>Malwarebytes</h3>
+
+            <p>
+                Gebruik Malwarebytes als aanvullende controle wanneer
+                je vermoedt dat je computer ongewenste software bevat.
+            </p>
+
+            <a class="download"
+               href="https://www.malwarebytes.com/nl/mwb-download"
+               target="_blank"
+               rel="noopener">
+                Malwarebytes downloaden
+            </a>
+
+        </div>
+
+    </div>
+
+</div>
+
+</section>
+
+
+<!-- ONLINE SCANNERS -->
+
+<section id="online">
+
+<div class="container">
+
+    <div class="section-title">
+
+        <h2>🌐 Online Malware Scanners</h2>
+
+        <p>
+            Controleer verdachte bestanden en websites met online diensten.
+        </p>
+
+    </div>
+
+
+    <div class="cards">
+
+
+        <!-- VIRUSTOTAL -->
+
+        <div class="card">
+
+            <div class="icon">🔬</div>
+
+            <span class="tag">ONLINE</span>
+
+            <h3>VirusTotal</h3>
+
+            <p>
+                Upload een verdacht bestand of controleer een URL
+                met meerdere beveiligingsengines.
+            </p>
+
+            <a class="download"
+               href="https://www.virustotal.com/"
+               target="_blank"
+               rel="noopener">
+                VirusTotal openen
+            </a>
+
+        </div>
+
+
+        <!-- ESET -->
+
+        <div class="card">
+
+            <div class="icon">🛡️</div>
+
+            <span class="tag">ONLINE TOOL</span>
+
+            <h3>ESET Online Scanner</h3>
+
+            <p>
+                Online beveiligingstool van ESET om Windows te
+                controleren op malware.
+            </p>
+
+            <a class="download"
+               href="https://www.eset.com/int/home/online-scanner/"
+               target="_blank"
+               rel="noopener">
+                ESET Online Scanner
+            </a>
+
+        </div>
+
+
+        <!-- HOUSECALL -->
+
+        <div class="card">
+
+            <div class="icon">🏠</div>
+
+            <span class="tag">ONLINE TOOL</span>
+
+            <h3>Trend Micro HouseCall</h3>
+
+            <p>
+                Extra scanner waarmee je je Windows-computer kunt
+                controleren op malware.
+            </p>
+
+            <a class="download"
+               href="https://www.trendmicro.com/en_us/forHome/products/housecall.html"
+               target="_blank"
+               rel="noopener">
+                HouseCall bekijken
+            </a>
+
+        </div>
+
+    </div>
+
+
+    <div class="info-box">
+
+        <h3>🔐 Privacy-tip</h3>
+
+        <p>
+            Upload nooit vertrouwelijke documenten, wachtwoorden,
+            persoonlijke foto's of andere gevoelige bestanden naar
+            een openbare online scanner. Een online scanner kan
+            bestanden naar zijn servers versturen voor analyse.
+        </p>
+
+    </div>
+
+</div>
+
+</section>
+
+
+<!-- OVERZICHT -->
+
+<section>
+
+<div class="container">
+
+    <div class="section-title">
+
+        <h2>📋 Snel overzicht</h2>
+
+        <p>
+            Handige gratis beveiligingstools op één plek.
+        </p>
+
+    </div>
+
+
+    <div class="table-wrapper">
+
+        <table>
+
+            <thead>
+
+                <tr>
+                    <th>Programma</th>
+                    <th>Type</th>
+                    <th>Windows</th>
+                    <th>Gratis</th>
+                </tr>
+
+            </thead>
+
+            <tbody>
+
+                <tr>
+                    <td>Microsoft Defender</td>
+                    <td>Antivirus</td>
+                    <td>10 / 11</td>
+                    <td>Ja</td>
+                </tr>
+
+                <tr>
+                    <td>ZoneAlarm Free Antivirus</td>
+                    <td>Antivirus</td>
+                    <td>10 / 11</td>
+                    <td>Ja</td>
+                </tr>
+
+                <tr>
+                    <td>Proton VPN</td>
+                    <td>VPN</td>
+                    <td>Windows</td>
+                    <td>Gratis plan</td>
+                </tr>
+
+                <tr>
+                    <td>Windows Firewall</td>
+                    <td>Firewall</td>
+                    <td>10 / 11</td>
+                    <td>Ja</td>
+                </tr>
+
+                <tr>
+                    <td>ZoneAlarm Free Firewall</td>
+                    <td>Firewall</td>
+                    <td>Windows</td>
+                    <td>Ja</td>
+                </tr>
+
+                <tr>
+                    <td>Malwarebytes AdwCleaner</td>
+                    <td>Malware scanner</td>
+                    <td>Windows</td>
+                    <td>Ja</td>
+                </tr>
+
+                <tr>
+                    <td>Microsoft MSRT</td>
+                    <td>Malware removal</td>
+                    <td>Windows</td>
+                    <td>Ja</td>
+                </tr>
+
+                <tr>
+                    <td>VirusTotal</td>
+                    <td>Online scanner</td>
+                    <td>Online</td>
+                    <td>Ja</td>
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+</div>
+
+</section>
+
+
+<!-- FAQ -->
+
+<section>
+
+<div class="container">
+
+    <div class="section-title">
+
+        <h2>❓ Veelgestelde vragen</h2>
+
+    </div>
+
+
+    <div class="faq">
+
+
+        <div class="faq-item">
+
+            <h3>Is Microsoft Defender gratis?</h3>
+
+            <p>
+                Ja. Microsoft Defender Antivirus is onderdeel van
+                Windows Security op moderne Windows-versies.
+            </p>
+
+        </div>
+
+
+        <div class="faq-item">
+
+            <h3>Heb ik een extra firewall nodig?</h3>
+
+            <p>
+                Voor de meeste Windows-gebruikers is de ingebouwde
+                Windows Firewall al een belangrijke beveiligingslaag.
+            </p>
+
+        </div>
+
+
+        <div class="faq-item">
+
+            <h3>Kan ik meerdere antivirusprogramma's installeren?</h3>
+
+            <p>
+                Het is meestal geen goed idee om meerdere programma's
+                met realtime antivirusbescherming tegelijk te gebruiken.
+            </p>
+
+        </div>
+
+
+        <div class="faq-item">
+
+            <h3>Is een gratis VPN altijd onbeperkt?</h3>
+
+            <p>
+                Nee. Gratis VPN-plannen kunnen beperkingen hebben,
+                bijvoorbeeld voor servers, snelheid of functies.
+                Controleer daarom altijd de actuele voorwaarden van
+                de VPN-aanbieder.
+            </p>
+
+        </div>
+
+
+        <div class="faq-item">
+
+            <h3>Waar kan ik het beste downloaden?</h3>
+
+            <p>
+                Gebruik bij voorkeur de officiële website van de
+                fabrikant. Vermijd onbekende downloadsites die
+                installatieprogramma's opnieuw verpakken.
+            </p>
+
+        </div>
+
+    </div>
+
+</div>
+
+</section>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+    <p>
+        © 2026 Gratis Windows Security
+    </p>
+
+    <p>
+        Gratis antivirus • VPN • Firewall • Malware scanners
+    </p>
+
+    <p>
+        Deze website is onafhankelijk en niet verbonden aan
+        Microsoft, Proton, Malwarebytes, ZoneAlarm, ESET,
+        Trend Micro of VirusTotal.
+    </p>
+
+    <p>
+        Gebruik altijd de officiële websites voor downloads.
+    </p>
+
+</footer>
+
+
+</body>
+</html>
+```
